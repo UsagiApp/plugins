@@ -1,6 +1,6 @@
 [versions]
 collection = "1.6.0"
-core = "0.0.3"
+core = "53086474ca"
 kotlin = "2.2.10"
 ksp = "2.2.10-2.0.2"
 coroutines = "1.10.2"
@@ -13,7 +13,7 @@ json = "20251224"
 jsoup = "1.17.2"
 quickjs = "1.1.0"
 korte = "4.0.10"
-serialization = "1.8.0"
+serialization = "1.9.0"
 simplexml = "2.7.1"
 stubs = "4.1.1.4"
 
