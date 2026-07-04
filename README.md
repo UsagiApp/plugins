@@ -1,6 +1,6 @@
 # plugins
 
-This template project provides a collection of utilities and some parsers for convenient access to any content available on the web.
+This template project provides a collection of utilities and a simple parser for convenient access to any content available on the web.
 
 ## Requirements
 
@@ -34,7 +34,6 @@ This template project provides a collection of utilities and some parsers for co
 
 - Thanks to HOLOLIVE for providing free content on their official website.
 - Thanks to [KotatsuApp](https://github.com/KotatsuApp) for providing HoloEarth parser and the core library.
-- Thanks to [Keiyoushi](https://github.com/Keiyoushi) for providing Holonometria extensions code on GitHub.
 
 ### License
 

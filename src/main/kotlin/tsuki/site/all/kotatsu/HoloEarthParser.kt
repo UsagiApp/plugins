@@ -1,28 +1,29 @@
-﻿package org.koitharu.kotatsu.parsers.site.all.kotatsu
+package tsuki.site.all.kotatsu
 
-import org.koitharu.kotatsu.parsers.MangaLoaderContext
-import org.koitharu.kotatsu.parsers.MangaSourceParser
-import org.koitharu.kotatsu.parsers.config.ConfigKey
-import org.koitharu.kotatsu.parsers.core.SinglePageMangaParser
-import org.koitharu.kotatsu.parsers.model.Manga
-import org.koitharu.kotatsu.parsers.model.MangaChapter
-import org.koitharu.kotatsu.parsers.model.MangaListFilter
-import org.koitharu.kotatsu.parsers.model.MangaListFilterCapabilities
-import org.koitharu.kotatsu.parsers.model.MangaListFilterOptions
-import org.koitharu.kotatsu.parsers.model.MangaPage
-import org.koitharu.kotatsu.parsers.model.MangaParserSource
-import org.koitharu.kotatsu.parsers.model.RATING_UNKNOWN
-import org.koitharu.kotatsu.parsers.model.SortOrder
-import org.koitharu.kotatsu.parsers.util.generateUid
-import org.koitharu.kotatsu.parsers.util.parseHtml
-import org.koitharu.kotatsu.parsers.util.parseSafe
-import org.koitharu.kotatsu.parsers.util.selectFirstOrThrow
-import org.koitharu.kotatsu.parsers.util.urlBuilder
+import tsuki.MangaLoaderContext
+import tsuki.MangaSourceParser
+import tsuki.config.ConfigKey
+import tsuki.core.SinglePageMangaParser
+import tsuki.model.Manga
+import tsuki.model.MangaChapter
+import tsuki.model.MangaListFilter
+import tsuki.model.MangaListFilterCapabilities
+import tsuki.model.MangaListFilterOptions
+import tsuki.model.MangaPage
+import tsuki.model.MangaParserSource
+import tsuki.model.RATING_UNKNOWN
+import tsuki.model.SortOrder
+import tsuki.util.generateUid
+import tsuki.util.parseHtml
+import tsuki.util.parseSafe
+import tsuki.util.selectFirstOrThrow
+import tsuki.util.urlBuilder
 import java.text.SimpleDateFormat
 import java.util.EnumSet
 import java.util.Locale
 
 // There's no difference compared to old kotatsu-parsers!
+// UPDATE: We migrated kotatsu-parsers (org.koitharu.kotatsu.parsers.*) to Tsuki (tsuki.*)
 @MangaSourceParser("HOLOEARTH", "HoloEarth")
 internal class HoloEarthParser(context: MangaLoaderContext) :
     SinglePageMangaParser(context, MangaParserSource.HOLOEARTH) {

@@ -9,7 +9,7 @@ plugins {
 }
 
 group = "org.usagi"
-version = "1.0.0"
+version = "1.0.1"
 
 tasks.test {
     useJUnitPlatform()
@@ -34,7 +34,7 @@ tasks.withType<org.jetbrains.kotlin.gradle.tasks.KotlinCompile>().configureEach 
             "-opt-in=kotlin.RequiresOptIn",
             "-opt-in=kotlin.contracts.ExperimentalContracts",
             "-opt-in=kotlinx.coroutines.ExperimentalCoroutinesApi",
-            "-opt-in=org.koitharu.kotatsu.parsers.InternalParsersApi",
+            "-opt-in=tsuki.InternalParsersApi",
         )
     }
 }
@@ -60,10 +60,8 @@ dependencies {
     implementation(libs.json)
     implementation(libs.androidx.collection)
 
-	api(libs.core.parsers)
+	api(libs.tsuki)
     api(libs.jsoup)
-
-    compileOnly(libs.android.stubs)
 
     ksp(project(":plugins-ksp"))
 
@@ -75,6 +73,8 @@ dependencies {
     testImplementation(libs.quickjs)
 }
 
-tasks.register<ReportGenerateTask>("generateTestsReport")
+tasks.register<ReportGenerateTask>("generateTestsReport") {
+    description = "Generate a HTML file to get tests report"
+}
 
 
