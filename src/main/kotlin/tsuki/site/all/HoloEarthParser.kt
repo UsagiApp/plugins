@@ -1,4 +1,4 @@
-package tsuki.site.all.kotatsu
+package tsuki.site.all
 
 import tsuki.MangaLoaderContext
 import tsuki.MangaSourceParser
@@ -146,5 +146,3 @@ internal class HoloEarthParser(context: MangaLoaderContext) :
         }
     }
 }
-
-
