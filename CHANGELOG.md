@@ -82,6 +82,8 @@ if (!filter.query.isNullOrEmpty()) {
 + append(filter.author.urlEncoded())
 ```
 
+- Remember to remove all Tachiyomi sources and its compatibility layer in your plugin project, it will not work (the entire stub layer has been removed in favor of native external sources).
+
 4. Build:
 
 Continue using `buildJar` task provided in plugin template project to build all sources and some core files into a complete plugin in .JAR format.
