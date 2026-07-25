@@ -90,6 +90,7 @@ Continue using `buildJar` task provided in plugin template project to build all 
 
 ## Changelog for plugins (1.0.2)
 
-### Dependency:
+### Dependencies:
 
-Downgrade `serialization` to 1.7.3 due to sources compatible (in `libs.versions.toml` file)
+- Downgrade `serialization` to 1.7.3 due to sources compatible (in `libs.versions.toml` file)
+- Upgrade `tsuki` to 1.0.3
