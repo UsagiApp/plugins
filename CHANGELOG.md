@@ -1,4 +1,4 @@
-## Changelog for plugins
+## Changelog for plugins (1.0.1)
 
 1. Dependency:
 
@@ -87,3 +87,9 @@ if (!filter.query.isNullOrEmpty()) {
 4. Build:
 
 Continue using `buildJar` task provided in plugin template project to build all sources and some core files into a complete plugin in .JAR format.
+
+## Changelog for plugins (1.0.2)
+
+### Dependency:
+
+Downgrade `serialization` to 1.7.3 due to sources compatible (in `libs.versions.toml` file)

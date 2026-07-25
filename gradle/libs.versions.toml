@@ -12,9 +12,10 @@ json = "20251224"
 jsoup = "1.17.2"
 quickjs = "1.1.0"
 korte = "4.0.10"
-serialization = "1.9.0"
+#noinspection NewerVersionAvailable
+serialization = "1.7.3"
 simplexml = "2.7.1"
-tsuki = "1.0.2"
+tsuki = "1.0.3"
 
 [plugins]
 kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
