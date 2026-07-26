@@ -92,4 +92,4 @@ Continue using `buildJar` task provided in plugin template project to build all 
 
 ### Dependencies:
 
-- Upgrade `tsuki` to 1.0.3
+- Upgrade `tsuki` to 1.0.3, `serialization` to 1.11.0
