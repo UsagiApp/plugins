@@ -14,7 +14,7 @@ quickjs = "1.1.0"
 korte = "4.0.10"
 serialization = "1.11.0"
 simplexml = "2.7.1"
-tsuki = "1.0.3"
+tsuki = "1.0.5"
 
 [plugins]
 kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
